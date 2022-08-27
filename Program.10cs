@@ -1,0 +1,10 @@
+﻿// Напишите задачу, кот.принимает на входе трехзначное число и на выходе пок-т вторую цифру эт.числа
+int N(int number)
+{
+    int num=number / 10 % 10;
+    return num;
+}
+Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int result=N (number);
+Console.WriteLine(result);
